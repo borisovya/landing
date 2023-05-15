@@ -7,6 +7,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
 }
 
 /* Global Styles */
@@ -26,7 +28,7 @@ body {
   display: flex;
   background-color: #fff;
   padding: 10px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .navbar {
@@ -64,20 +66,62 @@ body {
 
 /* Hero Section */
 .hero {
-  height: 80vh;
+  height: 90vh;
   background-image: url('https://m-files.cdnvideo.ru/lpfile/1/d/9/1d9f2dfc3287d333a3ef56bf32df793d.png');
   background-size: cover;
   color: #fff;
-  padding: 100px 0;
+  /*padding: 100px 0;*/
   background-position: 50% 0%;
   background-repeat: no-repeat;
   filter: none;
+  /*margin-top: 100px;*/
 }
 
 .hero-content {
-  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
+}
+
+.welcomeBlock {
+  font-size: 60px;
+  font-weight: bold;
+  width: max-content;
+  margin: 0 auto;
+  color: rgb(102, 255, 40)
+}
+
+.descriptionBlock {
+  font-weight: bold;
+  font-size: 96px;
+  padding-top: 350px;
+  margin: 10px 0 -30px 0;
+}
+
+.refundDescriptionBlock {
+  padding-top: -20px;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 auto;
+  font-family: Helvetica,Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.depositDescriptionBlock {
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 auto;
+  font-family: Helvetica,Arial, sans-serif;
+  line-height: 0.5;
+  color: rgb(102, 255, 40)
+}
+
+.tableContentBlock {
+  height: 649px;
+  background-color: #020019;
 }
 
 .hero h1 {
@@ -179,9 +223,16 @@ body {
   word-break: normal;
 }
 
-.buttonTexts {
+.buttonRegText {
   font-weight: bold;
   text-decoration: none;
+  color: #ffffff
+}
+
+.buttonLoginText {
+  font-weight: bold;
+  text-decoration: none;
+  color: black
 }
 
 .link {
@@ -189,8 +240,15 @@ body {
   color: #ffffff
 }
 
+.addFundsLink {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #ffffff
+}
+
 .addFundsBlock {
   font-weight: bold;
+  font-size: 26px;
   width: 400px;
   color: #1E1E1E;
   display: flex;
