@@ -37,6 +37,10 @@ body {
   justify-content: space-between;
 }
 
+.headerLink{
+  font-weight: bold;
+}
+
 .buttonsBlock {
   display: flex;
   align-items: center;

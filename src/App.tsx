@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import punchLogo from './asseds/f.jpg';
-import {Grid} from '@mui/material';
+import {Grid, Typography} from '@mui/material';
 
 function App() {
   return (
@@ -13,13 +13,13 @@ function App() {
         <nav className="navbar">
           <ul className="nav-links">
             <li>
-              <a href="https://rus2punchbet.space/d5f8f2d94">Новости</a>
+              <a href="https://rus2punchbet.space/d5f8f2d94" className='headerLink'>Новости</a>
             </li>
             <li>
-              <a href="https://rus2punchbet.space/d5f8f2d94">Спортивные события</a>
+              <a href="https://rus2punchbet.space/d5f8f2d94" className='headerLink'>Спортивные события</a>
             </li>
             <li>
-              <a href="https://rus2punchbet.space/d5f8f2d94">Бонусы</a>
+              <a href="https://rus2punchbet.space/d5f8f2d94" className='headerLink'>Бонусы</a>
             </li>
           </ul>
         </nav>
@@ -71,138 +71,175 @@ function App() {
 
       <section className='tableContentBlock'>
 
-        <Grid container columns={6} display='flex' spacing={1} justifyContent='center' pt={8}>
-          <Grid item xs={1} sx={{
-            color: '#fff',
-            fontSize: 30,
-            fontWeight: 'bold'
-          }}
-          >
-            Размер депозита
+        <Grid container display='flex' columns={9} justifyContent='center' pt={8} width='100%'>
+
+          <Grid item xs={1}>
+            <Typography display='flex' justifyContent='flex-end' sx={{
+              color: '#fff',
+              fontSize: 30,
+              fontWeight: 'bold',
+            }}>
+              Размер
+            </Typography>
+            <Typography display='flex' justifyContent='flex-end' sx={{
+              color: '#fff',
+              fontSize: 30,
+              fontWeight: 'bold',
+            }}>
+              депозита
+            </Typography>
           </Grid>
-          <Grid item xs={1}
-                sx={{
-                  color: 'rgb(102, 255, 40)',
-                  fontSize: 30,
-                  fontWeight: 'bold'
-                }}>
-            Кол-во фрибетов
+          <Grid item xs={1} ml={9} mr={9}>
+            <Typography display='flex' justifyContent='center' sx={{
+              color: 'rgb(102, 255, 40)',
+              fontSize: 30,
+              fontWeight: 'bold',
+            }}>
+              Кол-во
+            </Typography>
+            <Typography display='flex' justifyContent='center' sx={{
+              color: 'rgb(102, 255, 40)',
+              fontSize: 30,
+              fontWeight: 'bold',
+            }}>
+              фрибетов
+            </Typography>
           </Grid>
-          <Grid item xs={1}
-                sx={{
-                  color: 'rgb(102, 255, 40)',
-                  fontSize: 30,
-                  fontWeight: 'bold'
-                }}>
-            Сумма фрибетов
+          <Grid item xs={1} ml={4}>
+            <Typography display='flex' justifyContent='flex-start' sx={{
+              color: 'rgb(102, 255, 40)',
+              fontSize: 30,
+              fontWeight: 'bold',
+            }}>
+              Сумма
+            </Typography>
+            <Typography display='flex' justifyContent='flex-start' sx={{
+              color: 'rgb(102, 255, 40)',
+              fontSize: 30,
+              fontWeight: 'bold',
+            }}>
+              фрибетов
+            </Typography>
           </Grid>
         </Grid>
 
-        <Grid container columns={6} display='flex' spacing={1} justifyContent='center' pt={2}>
-          <Grid item xs={1} sx={{
-            color: '#fff',
-            fontSize: 30,
-            fontWeight: 'bold'
-          }}
-          >
-            от 7 000₽
+        <Grid container columns={9} display='flex' width='100%' justifyContent='center' pt={4}>
+          <Grid item xs={1}>
+            <Typography display='flex' justifyContent='flex-end' sx={{
+              color: '#fff',
+              fontSize: 30,
+              fontWeight: 'bold',
+            }}>
+              от 7 000₽
+            </Typography>
           </Grid>
-          <Grid item xs={1}
-                sx={{
-                  color: 'rgb(102, 255, 40)',
-                  fontSize: 30,
-                  fontWeight: 'bold'
-                }}>
-            4
+          <Grid item xs={2}>
+            <Typography display='flex' justifyContent='center' sx={{
+              color: 'rgb(102, 255, 40)',
+              fontSize: 30,
+              fontWeight: 'bold'
+            }}>
+              4
+            </Typography>
           </Grid>
-          <Grid item xs={1}
-                sx={{
-                  color: 'rgb(102, 255, 40)',
-                  fontSize: 30,
-                  fontWeight: 'bold'
-                }}>
-            10 000₽
-          </Grid>
-        </Grid>
-
-        <Grid container columns={6} display='flex' spacing={1} justifyContent='center' pt={2}>
-          <Grid item xs={1} sx={{
-            color: '#fff',
-            fontSize: 30,
-            fontWeight: 'bold'
-          }}
-          >
-            от 3 000₽
-          </Grid>
-          <Grid item xs={1}
-                sx={{
-                  color: 'rgb(102, 255, 40)',
-                  fontSize: 30,
-                  fontWeight: 'bold'
-                }}>
-            3
-          </Grid>
-          <Grid item xs={1}
-                sx={{
-                  color: 'rgb(102, 255, 40)',
-                  fontSize: 30,
-                  fontWeight: 'bold'
-                }}>
-            4 000₽
+          <Grid item xs={1}>
+            <Typography display='flex' justifyContent='flex-start' sx={{
+              color: 'rgb(102, 255, 40)',
+              fontSize: 30,
+              fontWeight: 'bold'
+            }}>
+              10 000₽
+            </Typography>
           </Grid>
         </Grid>
 
-        <Grid container columns={6} display='flex' spacing={1} justifyContent='center' pt={2}>
-          <Grid item xs={1} sx={{
-            color: '#fff',
-            fontSize: 30,
-            fontWeight: 'bold'
-          }}
-          >
-            от 1 000₽
+        <Grid container columns={9} display='flex' justifyContent='center' pt={2}>
+          <Grid item xs={1}>
+            <Typography display='flex' justifyContent='flex-end' sx={{
+              color: '#fff',
+              fontSize: 30,
+              fontWeight: 'bold'
+            }}>
+              от 3 000₽
+            </Typography>
           </Grid>
-          <Grid item xs={1}
-                sx={{
-                  color: 'rgb(102, 255, 40)',
-                  fontSize: 30,
-                  fontWeight: 'bold'
-                }}>
-            2
+          <Grid item xs={2}>
+            <Typography display='flex' justifyContent='center' sx={{
+              color: 'rgb(102, 255, 40)',
+              fontSize: 30,
+              fontWeight: 'bold'
+            }}>
+              3
+            </Typography>
           </Grid>
-          <Grid item xs={1}
-                sx={{
-                  color: 'rgb(102, 255, 40)',
-                  fontSize: 30,
-                  fontWeight: 'bold'
-                }}>
-            1 200₽
+          <Grid item xs={1}>
+            <Typography display='flex' justifyContent='flex-start' sx={{
+              color: 'rgb(102, 255, 40)',
+              fontSize: 30,
+              fontWeight: 'bold'
+            }}>
+              4 000₽
+            </Typography>
           </Grid>
         </Grid>
 
-        <Grid container columns={6} display='flex' spacing={1} justifyContent='center' pt={2} >
-          <Grid item xs={1} sx={{
-            color: '#fff',
-            fontSize: 30,
-            fontWeight: 'bold'
-          }}
-          >
-            от 500₽
+        <Grid container columns={9} display='flex' justifyContent='center' pt={2}>
+          <Grid item xs={1}>
+            <Typography display='flex' justifyContent='flex-end' sx={{
+              color: '#fff',
+              fontSize: 30,
+              fontWeight: 'bold'
+            }}>
+              от 1 000₽
+            </Typography>
           </Grid>
-          <Grid item xs={1}
-                sx={{
-                  color: 'rgb(102, 255, 40)',
-                  fontSize: 30,
-                  fontWeight: 'bold'
-                }}>
-            2
+          <Grid item xs={2}>
+            <Typography display='flex' justifyContent='center' sx={{
+              color: 'rgb(102, 255, 40)',
+              fontSize: 30,
+              fontWeight: 'bold'
+            }}>
+              2
+            </Typography>
           </Grid>
-          <Grid item xs={1} pb={8}
-                sx={{
-                  color: 'rgb(102, 255, 40)',
-                  fontSize: 30,
-                  fontWeight: 'bold'
-                }}>
-            500₽
+          <Grid item xs={1}>
+            <Typography display='flex' justifyContent='flex-start' sx={{
+              color: 'rgb(102, 255, 40)',
+              fontSize: 30,
+              fontWeight: 'bold'
+            }}>
+              1 200₽
+            </Typography>
+          </Grid>
+        </Grid>
+
+        <Grid container columns={9} display='flex' justifyContent='center' pt={2} >
+          <Grid item xs={1}>
+            <Typography display='flex' justifyContent='flex-end' sx={{
+              color: '#fff',
+              fontSize: 30,
+              fontWeight: 'bold',
+            }}>
+              от 500₽
+            </Typography>
+          </Grid>
+          <Grid item xs={2}>
+            <Typography display='flex' justifyContent='center' sx={{
+              color: 'rgb(102, 255, 40)',
+              fontSize: 30,
+              fontWeight: 'bold'
+            }}>
+              2
+            </Typography>
+          </Grid>
+          <Grid item xs={1} pb={8}>
+            <Typography display='flex' justifyContent='flex-start' sx={{
+              color: 'rgb(102, 255, 40)',
+              fontSize: 30,
+              fontWeight: 'bold'
+            }}>
+              500₽
+            </Typography>
           </Grid>
         </Grid>
 
@@ -212,28 +249,49 @@ function App() {
           </div>
         </a>
 
+        <Grid item>
+          <a href="https://rus2punchbet.space/d469330ad" className='link'>
+            <Typography display='flex' justifyContent='center' sx={{
+              color: '#fff',
+              fontSize: 25,
+              fontWeight: 'bold',
+              mt: 4,
+              "&:hover": {
+                color: '#fff',
+                fontSize: 25,
+                fontWeight: 'bold',
+                textDecoration: 'underline',
+                cursor: 'pointer'
+              },
+            }}>
+              Подробные Правила
+            </Typography>
+          </a>
+        </Grid>
+
+
       </section>
 
-      <section className="features">
-        <div className="feature">
-          <img src="icon1.png" alt="Feature 1"/>
-          <h2>Широкий выбор спортивных событий</h2>
-          <p>
-            У нас вы найдете огромный выбор спортивных событий, от футбола до
-            тенниса и гольфа.
-          </p>
-        </div>
-        <div className="feature">
-          <img src="icon2.png" alt="Feature 2"/>
-          <h2>Лучшие коэффициенты на рынке</h2>
-          <p>Мы предлагаем конкурентные коэффициенты для всех видов ставок.</p>
-        </div>
-        <div className="feature">
-          <img src="icon3.png" alt="Feature 3"/>
-          <h2>Простой и удобный интерфейс</h2>
-          <p>Мы создали интуитивно понятный и удобный интерфейс для наших клиентов.</p>
-        </div>
-      </section>
+      {/*<section className="features">*/}
+      {/*  <div className="feature">*/}
+      {/*    <img src="icon1.png" alt="Feature 1"/>*/}
+      {/*    <h2>Широкий выбор спортивных событий</h2>*/}
+      {/*    <p>*/}
+      {/*      У нас вы найдете огромный выбор спортивных событий, от футбола до*/}
+      {/*      тенниса и гольфа.*/}
+      {/*    </p>*/}
+      {/*  </div>*/}
+      {/*  <div className="feature">*/}
+      {/*    <img src="icon2.png" alt="Feature 2"/>*/}
+      {/*    <h2>Лучшие коэффициенты на рынке</h2>*/}
+      {/*    <p>Мы предлагаем конкурентные коэффициенты для всех видов ставок.</p>*/}
+      {/*  </div>*/}
+      {/*  <div className="feature">*/}
+      {/*    <img src="icon3.png" alt="Feature 3"/>*/}
+      {/*    <h2>Простой и удобный интерфейс</h2>*/}
+      {/*    <p>Мы создали интуитивно понятный и удобный интерфейс для наших клиентов.</p>*/}
+      {/*  </div>*/}
+      {/*</section>*/}
 
       <footer className="footer">
         <p>© 2023 Punch Bet. Все права защищены.</p>
