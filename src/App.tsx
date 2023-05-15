@@ -8,7 +8,6 @@ function App() {
     <div className="landing-page">
 
       <header className="header">
-        {/*<a href="https://rus2punchbet.space/d469330ad" className="logo">*/}
         <img src={punchLogo} alt="logo"/>
         {/*</a>*/}
         <nav className="navbar">

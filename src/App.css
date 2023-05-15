@@ -64,17 +64,14 @@ body {
   color: #333;
 }
 
-/* Hero Section */
 .hero {
   height: 90vh;
   background-image: url('https://m-files.cdnvideo.ru/lpfile/1/d/9/1d9f2dfc3287d333a3ef56bf32df793d.png');
   background-size: cover;
   color: #fff;
-  /*padding: 100px 0;*/
   background-position: 50% 0%;
   background-repeat: no-repeat;
   filter: none;
-  /*margin-top: 100px;*/
 }
 
 .hero-content {
@@ -148,7 +145,7 @@ body {
   background-color: #e64400;
 }
 
-/* Features Section */
+
 .features {
   display: flex;
   justify-content: space-between;
