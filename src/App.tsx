@@ -62,7 +62,6 @@ function App() {
             </div>
           </a>
 
-
           <div className="depositDescriptionBlock">
             <span>ЧЕМ БОЛЬШЕ ДЕПОЗИТ, ТЕМ БОЛЬШЕ ФРИБЕТОВ!</span>
           </div>
@@ -72,7 +71,6 @@ function App() {
       <section className='tableContentBlock'>
 
         <Grid container display='flex' columns={9} justifyContent='center' pt={8} width='100%'>
-
           <Grid item xs={1}>
             <Typography display='flex' justifyContent='flex-end' sx={{
               color: '#fff',
@@ -122,7 +120,6 @@ function App() {
             </Typography>
           </Grid>
         </Grid>
-
         <Grid container columns={9} display='flex' width='100%' justifyContent='center' pt={4}>
           <Grid item xs={1}>
             <Typography display='flex' justifyContent='flex-end' sx={{
